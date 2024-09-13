@@ -21,5 +21,11 @@ input.onPinTouchEvent(TouchPin.P3, input.buttonEventDown(), function () {
     basic.pause(7000)
     FAmpel(1, 0)
 })
-basic.showString("01AMPEL")
 FAmpel(1, 1)
+basic.showLeds(`
+    . . . . .
+    . # . . .
+    . . . . .
+    . # . . .
+    . . . . .
+    `)
